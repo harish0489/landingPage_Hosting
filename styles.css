@@ -1,0 +1,40 @@
+/* Import Font Family */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+/* Cleanup CSS */
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #fdfeff;
+}
+
+button{
+    all:unset;
+}
+
+body{
+    padding: 6vh 10vh;
+}
+
+/* Styles for Navbar */
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    height : 5vh;
+    margin-bottom: 12vh;
+}
+
+nav .list-items{
+    display: flex;
+    flex:2;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.list-item, .register{
+    list-style-type: none;    
+    padding : 0vh 2vh;
+    font-family: "Roboto", sans-serif;
+}
