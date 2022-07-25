@@ -1,5 +1,5 @@
 /* Import Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
 /* Cleanup CSS */
 *{
@@ -48,9 +48,27 @@ nav .list-items{
     flex: 1;
 }
 
-.jumboImage{
-
+.jumboContent{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    padding : 10vh 0vh;
+    padding-right: 15vh;
 }
+
+.jumboContent h2, .jumboContent p, .jumboContent button{
+    margin : 2vh 0vh;
+}
+
+.jumboContent h2{
+    font-family: "Roboto", sans-serif;
+    font-size : 48px;
+    font-weight: 700;
+
+    
+}
+
+
 
 
 
