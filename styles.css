@@ -38,3 +38,21 @@ nav .list-items{
     padding : 0vh 2vh;
     font-family: "Roboto", sans-serif;
 }
+
+.jumbo{
+    display: flex;
+    flex-direction: row;
+}
+
+.jumbo .jumboContent, .jumbo .jumboImage{
+    flex: 1;
+}
+
+.jumboImage{
+
+}
+
+
+
+
+
