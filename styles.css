@@ -1,12 +1,14 @@
 /* Import Font Family */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,700;1,800&family=Orbitron:wght@400;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,700&display=swap');
 
 /* Cleanup CSS */
 * {
     margin: 0;
     padding: 0;
+    list-style-type: none;
 }
-body{
+
+body {
     background-color: #fdfeff;
 }
 
@@ -14,18 +16,24 @@ button {
     all: unset;
 }
 
-
+nav {
+    padding: 6vh 13vh;
+}
 
 /* Styles for Navbar */
-nav, .jumbo, .services, .customer{
-    padding: 6vh 10vh;
+.jumbo,
+.services,
+.customer,
+.services-card,
+.pricecard,
+.footer {
+    padding: 0vh 13vh;
 }
 
 nav {
     display: flex;
     flex-direction: row;
     height: 5vh;
-    margin-bottom: 12vh;
 }
 
 nav .list-items {
@@ -37,13 +45,13 @@ nav .list-items {
 
 .list-item,
 .register {
-    list-style-type: none;
-    padding: 0vh 2vh;
+    padding: 0vh 3vh;
     font-family: "Roboto", sans-serif;
 }
 
 .jumbo {
-    padding: 6vh 10vh;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     display: flex;
     flex-direction: row;
 }
@@ -97,50 +105,341 @@ nav .list-items {
 }
 
 
-.registerNow{
-    background-color: #2a2a72;
-    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
-    padding : 0vh 12vh;
-    height : 35vh;
-    color : #FFFFFF;
+.registerNow {
+
+    background: url("./assets/footer.svg");
+    background-position: bottom left;
+    height: 45vh;
+    padding: 3% 6%;
+    color: #ffffff;
     display: flex;
-    
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
-.registerNow .reg_info{
+
+.registerNow .reg_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    flex: 2;
+}
+
+.registerNow .reg_button {
 
     display: flex;
+    flex: 1;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.registerNow .reg_button{
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.reg_info h1 {
+    font-size: 56px;
+    padding-right: 90vh;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
 }
 
-.services-card{
+.reg_info p {
+    margin-top: 5vh;
+    font-size: 16px;
+    padding-right: 20vh;
+    font-weight: 300;
+    font-family: "Roboto", sans-serif;
+}
+
+.reg-button {
+    font-family: "Open Sans", sans-serif;
+    padding: 2vh 5vh;
+    border-radius: 5px;
+    color: #FFFFFF;
+    border: 1px solid #3faaf4;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 120px;
+
+}
+
+.services-card {
     display: grid;
     grid-template-columns: auto auto auto;
+}
+
+.services-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-title,
+.services-descrtion {
+    width: 50vw;
+    font-family: "Roboto", sans-serif;
+}
+
+.services-descrtion {
+    font-size: 18px;
+    color: #888FA2;
+    line-height: 200%;
+    padding: 10vh 0vh;
+}
+
+.services-title {
+    text-transform: capitalize;
+    font-size: 52px;
+    font-weight: 700;
+    padding-right: 25vh;
 }
 
 
 /* Footer Styles */
 
-.footer{
+.footer {
+    margin: 10vh 0vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
 
-.footer-links ul li{
+.footer-links ul li {
     list-style-type: none;
     font-family: "Roboto", sans-serif;
+    margin: 3vh 0;
 }
-.social-media{
+
+.footer-links ul li:first-child {
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.footer-links ul li:not(:first-child) {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #c8c8c8
+}
+
+.footer-brand img {
+    margin-top: 3vh;
+    height: 4vh;
+}
+
+.social-media {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cards p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.cards .desc {
+    color: #888FA2;
+    font-family: "Open Sans", sans-serif;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+.pricecard {
+    margin-top: 10vh;
+    background: linear-gradient(to right bottom, #0bc1f8, #0677ed);
+}
+
+.price-main-title {
+    padding-top: 5vh;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    color: #FFFFFF;
+    font-size: 42px;
+    font-weight: 500;
+}
+
+.price-cards-holder {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5vh 8vh;
+}
+
+.price-cards {
+    background-color: #ffffff;
+    border-radius: 10px;
+    height: 600px;
+    width: 25vw;
+}
+
+.price-title {
+    margin: 5vh 0vh 2vh 2vh;
+    font-family: "Open Sans", sans-serif;
+}
+
+.price-desc {
+    margin: 3vh 0vh 2vh 2vh;
+    font-family: "Open Sans", sans-serif;
+    color: #888FA2;
+}
+
+.price-list-items li {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3vh 0vh 2vh 2vh;
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
+    color: #000000;
+    font-weight: 500;
+
+}
+
+.green-check {
+    height: 3vh;
+    margin-right: 2vh;
+}
+
+.plan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.dollar {
+    margin-top: 5vh;
+    font-family: "Open Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.month,
+.cancel {
+    color: #a4a9b8;
+}
+
+.cancel {
+    margin-top: 2vh;
+    font-size: 18px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.btn-purchase,
+.btn-purchase-active {
+    font-family: "Open Sans", sans-serif;
+    padding: 2vh 5vh;
+    border-radius: 5px;
+    color: #3faaf4;
+    border: 1px solid #3faaf4;
+    font-weight: 700;
+    margin-top: 20px;
+    width: 120px;
+}
+
+.btn-purchase-active {
+    background: linear-gradient(to right bottom, #08baf7, #0680ef);
+    color: #ffffff;
+}
+
+.activeheader {
+    background-color: #313131;
+    padding: 40px 20px 1px 20px;
+    border-radius: 10px;
+}
+
+.activeheader h1 {
+    margin-top: -10px;
+    color: #ffffff
+}
+
+
+.customer-heading {
+    font-family: "Open Sans", sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 20vh;
+    text-align: center;
+}
+
+.customer-desc {
+    text-align: center;
+    color: #a4a9b8;
+    padding: 4vh 20vh;
+}
+
+.customer-card-holder {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.customer-card {
+    background-color: #fdfeff;
+    border: 1px solid #fdfeff;
+    margin: 20px 30px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px #d5d5d5;
+}
+
+.customer-card-active {
+    background-color: #ffffff;
+    border: 1px solid #fdfeff;
+    margin: 20px 30px;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 3px #d5d5d5;
+
+}
+
+
+.customer-details {
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.org p {
+    margin-left: 2vh;
+}
+
+.cust-name {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.cust-org {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+}
+
+.social-media div {
+    background: linear-gradient(to right bottom, #10c3ff, #0680ef);
+    color: #ffffff;
+    padding: 8px;
+    text-align: center;
+    font-size: 14px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50px;
+    margin : 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-icons {
+    color: #fff;
 }
